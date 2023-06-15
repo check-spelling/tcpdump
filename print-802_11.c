@@ -1724,7 +1724,7 @@ static const struct tok category_str[] = {
 	{ 3,   "BA"                  },
 	{ 7,   "HT"                  },
 	{ 13,  "MeshAction"          },
-	{ 14,  "MultiohopAction"     },
+	{ 14,  "MultihopAction"      },
 	{ 15,  "SelfprotectAction"   },
 	{ 127, "Vendor"              },
 	{ 0, NULL }
