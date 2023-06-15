@@ -208,7 +208,7 @@ static const struct tok esis_option_values[] = {
     { ESIS_OPTION_SECURITY,        "Security" },
     { ESIS_OPTION_ES_CONF_TIME,    "ES Configuration Time" },
     { ESIS_OPTION_PRIORITY,        "Priority" },
-    { ESIS_OPTION_ADDRESS_MASK,    "Addressk Mask" },
+    { ESIS_OPTION_ADDRESS_MASK,    "Address Mask" },
     { ESIS_OPTION_SNPA_MASK,       "SNPA Mask" },
     { 0, NULL }
 };
