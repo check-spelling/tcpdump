@@ -115,8 +115,8 @@
 #define RADCMD_ACCESS_REQ   1 /* Access-Request      */
 #define RADCMD_ACCESS_ACC   2 /* Access-Accept       */
 #define RADCMD_ACCESS_REJ   3 /* Access-Reject       */
-#define RADCMD_ACCOUN_REQ   4 /* Accounting-Request  */
-#define RADCMD_ACCOUN_RES   5 /* Accounting-Response */
+#define RADCMD_ACCOUNT_REQ   4 /* Accounting-Request  */
+#define RADCMD_ACCOUNT_RES   5 /* Accounting-Response */
 #define RADCMD_ACCESS_CHA  11 /* Access-Challenge    */
 #define RADCMD_STATUS_SER  12 /* Status-Server       */
 #define RADCMD_STATUS_CLI  13 /* Status-Client       */
@@ -132,8 +132,8 @@ static const struct tok radius_command_values[] = {
     { RADCMD_ACCESS_REQ, "Access-Request" },
     { RADCMD_ACCESS_ACC, "Access-Accept" },
     { RADCMD_ACCESS_REJ, "Access-Reject" },
-    { RADCMD_ACCOUN_REQ, "Accounting-Request" },
-    { RADCMD_ACCOUN_RES, "Accounting-Response" },
+    { RADCMD_ACCOUNT_REQ, "Accounting-Request" },
+    { RADCMD_ACCOUNT_RES, "Accounting-Response" },
     { RADCMD_ACCESS_CHA, "Access-Challenge" },
     { RADCMD_STATUS_SER, "Status-Server" },
     { RADCMD_STATUS_CLI, "Status-Client" },

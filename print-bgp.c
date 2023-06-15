@@ -1682,7 +1682,7 @@ trunc:
     /*
      * We can come here, either we did not have enough data, or if we
      * try to decode 4 byte ASs in 2 byte format. Either way, return 4,
-     * so that calller can try to decode each AS as of 4 bytes. If indeed
+     * so that caller can try to decode each AS as of 4 bytes. If indeed
      * there was not enough data, it will crib and end the parse anyways.
      */
     return 4;
@@ -1705,7 +1705,7 @@ check_add_path(netdissect_options *ndo, const u_char *pptr, u_int length,
     }
 
     /*
-     * Scan through the NLRI information under the assumpetion that
+     * Scan through the NLRI information under the assumption that
      * it doesn't have path IDs.
      */
     for (offset = 0; offset < length;) {

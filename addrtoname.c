@@ -943,12 +943,12 @@ static const struct etherlist {
  * and etheraddr_string() fills in the table on demand.  If it doesn't,
  * then we suck in the entire /etc/ethers file at startup.  The idea
  * is that parsing the local file will be fast, but spinning through
- * all the ethers entries via NIS & next_etherent might be very slow.
+ * all the ethers entries via NIS & next_ethernet might be very slow.
  *
- * XXX pcap_next_etherent doesn't belong in the pcap interface, but
+ * XXX pcap_next_ethernet doesn't belong in the pcap interface, but
  * since the pcap module already does name-to-address translation,
  * it's already does most of the work for the ethernet address-to-name
- * translation, so we just pcap_next_etherent as a convenience.
+ * translation, so we just pcap_next_ethernet as a convenience.
  */
 static void
 init_etherarray(netdissect_options *ndo)
@@ -958,13 +958,13 @@ init_etherarray(netdissect_options *ndo)
 #ifdef USE_ETHER_NTOHOST
 	char name[256];
 #else
-	struct pcap_etherent *ep;
+	struct pcap_ethernet *ep;
 	FILE *fp;
 
 	/* Suck in entire ethers file */
 	fp = fopen(PCAP_ETHERS_FILE, "r");
 	if (fp != NULL) {
-		while ((ep = pcap_next_etherent(fp)) != NULL) {
+		while ((ep = pcap_next_ethernet(fp)) != NULL) {
 			tp = lookup_emem(ndo, ep->addr);
 			tp->e_name = strdup(ep->name);
 			if (tp->e_name == NULL)
@@ -1120,7 +1120,7 @@ static const struct ipxsap_ent {
 	{ 0x030a, "GalacticommWorldgroupServer" },
 	{ 0x030c, "IntelNetport2/HP JetDirect/HP Quicksilver" },
 	{ 0x0320, "AttachmateGateway" },
-	{ 0x0327, "MicrosoftDiagnostiocs" },
+	{ 0x0327, "MicrosoftDiagnostics" },
 	{ 0x0328, "WATCOM SQL Server" },
 	{ 0x0335, "MultiTechSystems MultisynchCommServer" },
 	{ 0x0343, "Xylogics RemoteAccessServer/LANModem" },

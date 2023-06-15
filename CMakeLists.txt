@@ -78,7 +78,7 @@ endif()
 # If, for whatever reason, directories in which we search for external
 # libraries, other than the standard system library directories, are
 # added to the executable's rpath in the build process, we most
-# defintely want them in the installed image's rpath if they are
+# definitely want them in the installed image's rpath if they are
 # necessary in order to find the libraries at run time.
 #
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
@@ -994,7 +994,7 @@ if(EXISTS ${CMAKE_SOURCE_DIR}/.devel OR EXISTS ${CMAKE_BINARY_DIR}/.devel)
         # __declspec(align), because the only structures whose layout
         # we precisely specify are those that get overlayed on packet
         # data, and in those every element is an array of octets so
-        # that we have full control over the size and aligmnet, and,
+        # that we have full control over the size and alignment, and,
         # apparently, jmp_buf has such a declaration on x86, meaning
         # that everything that includes netdissect.h, i.e. almost every
         # file in tcpdump, gets a warning.
