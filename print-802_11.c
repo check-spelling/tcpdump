@@ -67,7 +67,7 @@
 #define	IEEE802_11_STATUS_LEN		2
 #define	IEEE802_11_REASON_LEN		2
 
-/* Length of previous AP in reassocation frame */
+/* Length of previous AP in reassociation frame */
 #define	IEEE802_11_AP_LEN		6
 
 #define	T_MGMT 0x0  /* management */
