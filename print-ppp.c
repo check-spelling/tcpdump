@@ -194,7 +194,7 @@ static const char *lcpconfopts[] = {
 	"deprecated(12)",	/* used to be a Multi-Link-Procedure*/
 	"Call-Back",		/* (13) */
 	"deprecated(14)",	/* used to be a Connect-Time */
-	"deprecated(15)",	/* used to be a Compund-Frames */
+	"deprecated(15)",	/* used to be a Compound-Frames */
 	"deprecated(16)",	/* used to be a Nominal-Data-Encap */
 	"MRRU",			/* (17) */
 	"12-Bit seq #",		/* (18) */
