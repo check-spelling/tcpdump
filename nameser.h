@@ -112,7 +112,7 @@
 #define NOERROR		0		/* no error */
 #define FORMERR		1		/* format error */
 #define SERVFAIL	2		/* server failure */
-#define NXDOMAIN	3		/* non existent domain */
+#define NXDOMAIN	3		/* nonexistent domain */
 #define NOTIMP		4		/* not implemented */
 #define REFUSED		5		/* query refused */
 	/* non standard */
