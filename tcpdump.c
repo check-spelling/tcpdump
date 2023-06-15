@@ -968,7 +968,7 @@ tstamp_precision_to_string(int precision)
  * along the lines of ioctl(), the fact that ioctl() operations are
  * largely specific to particular character devices but fcntl() operations
  * are either generic to all descriptors or generic to all descriptors for
- * regular files nonwithstanding.
+ * regular files notwithstanding.
  *
  * The Capsicum people decided that fine-grained control of descriptor
  * operations was required, so that you need to grant permission for
