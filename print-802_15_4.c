@@ -418,7 +418,7 @@ static const char *mac_c_names[] = {
 #define FC_ADDRESSING_MODE_LONG         0x03
 
 /*
- * IEEE 802.15.4 CRC 16 function. This is using CCITT polynomial of 0x1021,
+ * IEEE 802.15.4 CRC 16 function. This is using the CCITT polynomial of 0x1021,
  * but the initial value is 0, and the bits are reversed for both in and out.
  * See section 7.2.10 of 802.15.4-2015 for more information.
  */
@@ -470,7 +470,7 @@ ieee802_15_4_reverse32(uint32_t x)
 }
 
 /*
- * IEEE 802.15.4 CRC 32 function. This is using ANSI X3.66-1979 polynomial of
+ * IEEE 802.15.4 CRC 32 function. This is using the ANSI X3.66-1979 polynomial of
  * 0x04C11DB7, but the initial value is 0, and the bits are reversed for both
  * in and out. See section 7.2.10 of 802.15.4-2015 for more information.
  */
