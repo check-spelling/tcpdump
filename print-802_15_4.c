@@ -1664,7 +1664,7 @@ ieee802_15_4_print_command_data(netdissect_options *ndo,
 			return caplen;
 		}
 		break;
-	case 0x03: /* Diassociation Notification command */
+	case 0x03: /* Disassociation Notification command */
 		if (caplen != 1) {
 			ND_PRINT("Invalid Disassociation Notification command length");
 			return -1;
