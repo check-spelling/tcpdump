@@ -87,7 +87,7 @@
 #define UPDATEMA	0xd		/* modify all named resource record */
 
 #define ZONEINIT	0xe		/* initial zone transfer */
-#define ZONEREF		0xf		/* incremental zone referesh */
+#define ZONEREF		0xf		/* incremental zone refresh */
 
 /*
  * Undefine various #defines from various System V-flavored OSes (Solaris,
