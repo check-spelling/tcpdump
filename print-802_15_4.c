@@ -250,7 +250,7 @@ static const char *p_mlme_short_names[] = {
 	"TVWS PHY Operating Mode Description IE",	/* 0x2b */
 	"TVWS Device Capabilities IE",			/* 0x2c */
 	"TVWS Device Category IE",			/* 0x2d */
-	"TVWS Device Identiication IE",			/* 0x2e */
+	"TVWS Device Identification IE",			/* 0x2e */
 	"TVWS Device Location IE",			/* 0x2f */
 	"TVWS Channel Information Query IE",		/* 0x30 */
 	"TVWS Channel Information Source IE",		/* 0x31 */
