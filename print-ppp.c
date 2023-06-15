@@ -859,7 +859,7 @@ handle_chap(netdissect_options *ndo,
 	 * don't know which flavor of CHAP (i.e. CHAP-MD5, MS-CHAPv1,
 	 * MS-CHAPv2) is used at this point, we can't decode packet
 	 * specifically to each algorithms. Instead, we simply decode
-	 * the GCD (Gratest Common Denominator) for all algorithms.
+	 * the GCD (Greatest Common Denominator) for all algorithms.
 	 */
 	switch (code) {
 	case CHAP_CHAL:
