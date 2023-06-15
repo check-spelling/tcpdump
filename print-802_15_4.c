@@ -2038,19 +2038,19 @@ ieee802_15_4_std_frames(netdissect_options *ndo,
 	}
 
 	switch (security_level) {
-	case 0: /*FALLTHOUGH */
+	case 0: /*FALLTHROUGH */
 	case 4:
 		miclen = 0;
 		break;
-	case 1: /*FALLTHOUGH */
+	case 1: /*FALLTHROUGH */
 	case 5:
 		miclen = 4;
 		break;
-	case 2: /*FALLTHOUGH */
+	case 2: /*FALLTHROUGH */
 	case 6:
 		miclen = 8;
 		break;
-	case 3: /*FALLTHOUGH */
+	case 3: /*FALLTHROUGH */
 	case 7:
 		miclen = 16;
 		break;
@@ -2360,19 +2360,19 @@ ieee802_15_4_mp_frame(netdissect_options *ndo,
 	}
 
 	switch (security_level) {
-	case 0: /*FALLTHOUGH */
+	case 0: /*FALLTHROUGH */
 	case 4:
 		miclen = 0;
 		break;
-	case 1: /*FALLTHOUGH */
+	case 1: /*FALLTHROUGH */
 	case 5:
 		miclen = 4;
 		break;
-	case 2: /*FALLTHOUGH */
+	case 2: /*FALLTHROUGH */
 	case 6:
 		miclen = 8;
 		break;
-	case 3: /*FALLTHOUGH */
+	case 3: /*FALLTHROUGH */
 	case 7:
 		miclen = 16;
 		break;
