@@ -1303,7 +1303,7 @@ ieee802_15_4_print_mlme_ie_list(netdissect_options *ndo,
 }
 
 /*
- * Multiplexd IE (802.15.9) parsing and printing.
+ * Multiplexed IE (802.15.9) parsing and printing.
  *
  * Returns number of bytes consumed from packet or -1 in case of error.
  */
